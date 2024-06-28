@@ -1,0 +1,70 @@
+.container {
+  background-color: #121B20;
+  color: #ffffff;
+  padding: 50px;
+  border-radius: 5px;
+  max-width: 60%;
+  margin: 50px auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.container h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.assetsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.assetCard {
+  background-color: black;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  border: 1px solid #2f3e46;
+}
+
+.assetCard h4 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.assetCard p {
+  margin: 5px 0;
+  line-height: 1.8;
+}
+
+.noAssets {
+  background-color: black;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #2f3e46;
+  margin: 20px auto;
+  max-width: 60%;
+  box-sizing: border-box;
+
+}
+
+@media (max-width: 1200px) {
+  .assetsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .assetsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .assetsGrid {
+    grid-template-columns: 1fr;
+  }
+}
